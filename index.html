@@ -2,8 +2,8 @@
 <html lang="eng">
     <head>
         <title>crystal Collector Game</title>
-        <link rel ="stylesheet" type="text/css" href ="assets/css/styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+       <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     </head>
 
 
@@ -12,31 +12,33 @@
         <header>
             <h1>Crystal Collector Guessing Game</h1>
         </header>
-        <div class="container">
-            <div>
-                <h2>Choose your Crystal</h2>
-            </div>
+            <div class="container">
+                <div>
+                    <h2>Choose your Crystal</h2>
+                </div>
 
-            <div>
-                <p>Please follow the list of instructions:</p>
+                    <div>
+                        <p>Please follow the list of instructions: </p>
+                    </div>
+                        <p id="randomNumberMessage">Computer's Random Number: </p> 
+                        <p id="yourNumberChoice">Your Number Choice: </p>
+                </div>
             </div>
-         </div>
          <div class="buttons">
 
-                <img class="image" id="image1" src="assets/images/mindGem.JPG">
-                <img class="image" id="image1" src="assets/images/soulGem.JPG">
-                <img class="image" id="image1" src="assets/images/spaceGem.JPG">
+            <span><img class="image" id="image1" src="assets/images/mindGem.JPG" value = " " ></span>
+            <span><img class="image" id="image2" src="assets/images/soulGem.JPG" value = " "></span>
+            <span><img class="image" id="image3" src="assets/images/spaceGem.JPG" value = " " ><span></span>
 
             <div class = "numberMatch"></div>
             <div class = "rightGuess">Right Guess</div>
             <div class = "wrong guess">Wrong Guess</div>
-
-         
-
-
          </div>
 
+            <img onclick="image()"><img>
 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+         <script src="assets/javascript/crystalCollector.js"></script>
 
 
 
