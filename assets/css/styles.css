@@ -1,42 +1,42 @@
 body {
-   background-color: #000000;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 18px;
-   color: #ffffff;
-   line-height: 34px;
-   padding-right: 30px;
-   padding-top: 30px;
-   text-align: center;
-}
-
-h1,
-.container {
-   background-color: #000000;
-   color: #f5dbeb;
-   border-color: #f5dbeb;
-   padding: 10px;
-   border-style: ridge;
-   padding-right: 5%;
-   padding-top: 15px;
-   margin-left: 10%;
-   margin-right: 10%;
-}
-#randomNumberMessag {
-text-align: center;
-border-color: #ffffff;
-color: #f5dbeb;
-font-size: 15px;  
-
-}
-p {
-   border-color: #ffffff;
-}
-
-.image {
-   padding:1%;
-}
-
-#randomNumberMessage {
-   color: #ff0000;
-   font-size: 23px;
-}
+    background-color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 34px;
+    padding-right: 30px;
+    padding-top: 30px;
+    text-align: center;
+ }
+ 
+ h1,
+ .container {
+    background-color: #000000;
+    color: #f5dbeb;
+    border-color: #f5dbeb;
+    padding: 10px;
+    border-style: ridge;
+    padding-right: 5%;
+    padding-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+ #randomNumberMessag {
+ text-align: center;
+ border-color: #ffffff;
+ color: #f5dbeb;
+ font-size: 15px;  
+ 
+ }
+ p {
+    border-color: #ffffff;
+ }
+ 
+ .image {
+    padding:1%;
+ }
+ 
+ #randomNumberMessage {
+    color: #ff0000;
+    font-size: 23px;
+ }

@@ -17,16 +17,38 @@ console.log(randomNumberMessage);
 var crystalNum = Math.floor(Math.random() * 50) + 1;
 console.log(crystalNum);
 
-$("#image1").append(crystalNum);
+//$("#image1").append(crystalNum);
+$("#image1").attr("data-value", crystalNum);
 
 var crystalRandom = [];
 
-var onclick = $("#image1").click(function image1() { 
-    document.getElementById("image1").innerHTML = Math.floor(Math.random() * 50) + 1;
-    console.log(image1);
-    
+ $("#image1").click(function image1() {
+     var imagevalue = $("#image1").data("value") 
+console.log(imagevalue);
+userScore = userScore + imagevalue;
+$("#userScore").text(userScore);
+   
 });
 
+$("#image2").attr("data-value", crystalNum);
+
+$("#image2").click(function image2() {
+    var imagevalue = $("#image2").data("value") 
+console.log(imagevalue);
+userScore = userScore + imagevalue;
+$("#userScore").text(userScore);
+  
+});
+
+$("#image3").attr("data-value", crystalNum);
+
+$("#image3").click(function image3() {
+    var imagevalue = $("#image3").data("value") 
+console.log(imagevalue);
+userScore = userScore + imagevalue;
+$("#userScore").text(userScore);
+  
+});
 
 
 
@@ -36,10 +58,15 @@ var onclick = $("#image1").click(function image1() {
    //document.getElementById("#image1").innerHTML = Math.floor(Math.random() * 50) + 1;
   // console.log(image1);
 //}
-
-
 // click on crystal to select random number 
-// when user click on crystal the number is added to random number
+// when user click on crystal the number is added to userScore
+
+var userScore = 0;
+
+$("#userScore").text(userScore);             //change the content of user score 
+
+
+
 // when user click on another crystal that number is also added
 // if user match random number the user wins
     // user win column is increased by one increment
